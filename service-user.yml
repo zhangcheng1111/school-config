@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://172.19.227.90:8761/eureka/
 server:
   port: 8862
 
@@ -10,10 +10,10 @@ spring:
     application:
       name: service-user
     datasource:
-        name: \u672C\u5730\u5E93
-        url: jdbc:mysql://127.0.0.1:3306/springboottest
+        name: school
+        url: jdbc:mysql://172.19.227.90:3306/school
         username: root
-        password: root
+        password: zc123456
 
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
