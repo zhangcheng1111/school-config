@@ -1,3 +1,7 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.19.227.90:8761/eureka/
 server:
   port: 8862
 
