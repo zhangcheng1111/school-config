@@ -1,6 +1,12 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.19.227.90:8761/eureka/
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
 server:
   port: 8862
-
 
 spring:
   datasource:
