@@ -11,7 +11,7 @@ spring:
     name: service-user
   datasource:
     name: school
-    url: jdbc:mysql://http://47.101.206.174:3306/school
+    url: jdbc:mysql://47.101.206.174:3306/school
     username: root
     password: zc123456
 
