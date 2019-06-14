@@ -2,9 +2,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-server:
-  port: 8862
-
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
 
 spring:
     application:
@@ -30,7 +30,8 @@ spring:
       testOnReturn: false
       poolPreparedStatements: true
       maxOpenPreparedStatements: 20
-
+server:
+  port: 8862
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.school.schooluser.pojo
