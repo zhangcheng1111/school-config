@@ -5,17 +5,17 @@ eureka:
   instance:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
     prefer-ip-address: true
-server:
-  port: 8862
 
 spring:
+  application:
+    name: service-user
   datasource:
     name: school
     url: jdbc:mysql://172.19.227.90:3306/school
     username: root
     password: zc123456
 
-    type: com.alibaba.druid.pool.DruidDataSource  
+    type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     filters: stat
     maxActive: 20
@@ -30,7 +30,8 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
-
+server:
+  port: 8862
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.school.schooluser.pojo
