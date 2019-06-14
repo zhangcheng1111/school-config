@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://172.19.227.90:8761/eureka/
   instance:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
     prefer-ip-address: true
@@ -11,7 +11,7 @@ spring:
     name: service-user
   datasource:
     name: school
-    url: jdbc:mysql://47.101.206.174:3306/school
+    url: jdbc:mysql://172.19.227.90:3306/school
     username: root
     password: zc123456
 
