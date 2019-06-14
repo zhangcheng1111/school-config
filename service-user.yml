@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://172.19.227.90:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 server:
   port: 8862
 
@@ -10,26 +10,26 @@ spring:
     application:
       name: service-user
     datasource:
-        name: school
-        url: jdbc:mysql://172.19.227.90:3306/school
-        username: root
-        password: zc123456
+      name: school
+      url: jdbc:mysql://47.101.206.174:3306/school
+      username: root
+      password: zc123456
 
-        type: com.alibaba.druid.pool.DruidDataSource
-        driver-class-name: com.mysql.jdbc.Driver
-        filters: stat
-        maxActive: 20
-        initialSize: 1
-        maxWait: 60000
-        minIdle: 1
-        timeBetweenEvictionRunsMillis: 60000
-        minEvictableIdleTimeMillis: 300000
-        validationQuery: select 'x'
-        testWhileIdle: true
-        testOnBorrow: false
-        testOnReturn: false
-        poolPreparedStatements: true
-        maxOpenPreparedStatements: 20
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
 
 mybatis:
   mapper-locations: classpath:mapping/*.xml
