@@ -8,7 +8,7 @@ eureka:
 
 spring:
   application:
-    name: service-user
+    name: service-rubbish
   datasource:
     name: school
     url: jdbc:mysql://47.101.206.174:3306/school
@@ -31,10 +31,10 @@ spring:
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
 server:
-  port: 8862
+  port: 9010
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-  type-aliases-package: com.school.schooluser.pojo
+  type-aliases-package: com.school.schoolrubbish.pojo
 
 pagehelper:
   helperDialect: mysql
