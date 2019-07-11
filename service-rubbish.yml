@@ -11,7 +11,7 @@ spring:
     name: service-rubbish
   datasource:
     name: rubbish_category
-    url: jdbc:mysql://172.19.227.90:3306/rubbish_category?useUnicode=true&amp;characterEncoding=UTF-8
+    url: jdbc:mysql://47.101.206.174:3306/rubbish_category?useUnicode=true&amp;characterEncoding=UTF-8
     username: root
     password: zc123456
 
